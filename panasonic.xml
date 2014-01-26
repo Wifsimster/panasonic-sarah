@@ -6,26 +6,40 @@
     <item>Sarah</item>
 
     <one-of>
+        <!-- Shutdown tv -->
         <item>éteint la télévision<tag>out.action.val="shutdownTv"</tag></item>
 
-        <!-- Volume  mute -->
+        <!-- Volume  mute on -->
         <item>coupe le son de la télévision<tag>out.action.val="muteTvOn"</tag></item>
         <item>coupe le volume de la télévision<tag>out.action.val="muteTvOn"</tag></item>
 
+        <item>active le son de la télévision<tag>out.action.val="muteTvOn"</tag></item>
+        <item>active le volume de la télévision<tag>out.action.val="muteTvOn"</tag></item>
+
+        <!-- Volume  mute off -->
         <item>remet le son de la télévision<tag>out.action.val="muteTvOff"</tag></item>
         <item>remet le volume de la télévision<tag>out.action.val="muteTvOff"</tag></item>
+
+        <item>désactive le son de la télévision<tag>out.action.val="muteTvOff"</tag></item>
+        <item>désactive le volume de la télévision<tag>out.action.val="muteTvOff"</tag></item>
 
         <!-- Volume  min -->
         <item>met le son de la télévision au minimum<tag>out.action.val="volumeMin"</tag></item>
         <item>met le volume de la télévision au minimum<tag>out.action.val="volumeMin"</tag></item>
+        <item>met le son de la télévision bas<tag>out.action.val="volumeMin"</tag></item>
+        <item>met le volume de la télévision bas<tag>out.action.val="volumeMin"</tag></item>
 
         <!-- Volume  half -->
         <item>met le son de la télévision à moitié<tag>out.action.val="volumeHalf"</tag></item>
         <item>met le volume de la télévision à moitié<tag>out.action.val="volumeHalf"</tag></item>
+        <item>met le son de la télévision normal<tag>out.action.val="volumeHalf"</tag></item>
+        <item>met le volume de la télévision normal<tag>out.action.val="volumeHalf"</tag></item>
 
         <!-- Volume  max -->
         <item>met le son de la télévision au maximum<tag>out.action.val="volumeMax"</tag></item>
         <item>met le volume de la télévision au maximum<tag>out.action.val="volumeMax"</tag></item>
+        <item>met le son de la télévision fort<tag>out.action.val="volumeMax"</tag></item>
+        <item>met le volume de la télévision fort<tag>out.action.val="volumeMax"</tag></item>
 
         <!-- Volume  up -->
         <item>monte le son de la télévision<tag>out.action.val="volumeUp"</tag></item>
@@ -39,15 +53,45 @@
 
         <!-- Channel up -->
         <item>met la chaine suivante<tag>out.action.val="channelUp"</tag></item>
+        <item>change de chaine<tag>out.action.val="channelUp"</tag></item>
+        <item>met une autre chaine<tag>out.action.val="channelUp"</tag></item>
 
         <!-- Channel down -->
         <item>met la chaine précédente<tag>out.action.val="channelDown"</tag></item>
 
-        <!-- Select source -->
+        <!-- Select a source -->
         <item>met la source télévision<tag>out.action.val="sourceTv"</tag></item>
         <item>met la source internet<tag>out.action.val="sourceInternet"</tag></item>
         <item>met la source carte SD<tag>out.action.val="sourceSdCard"</tag></item>
         <item>change la télévision de source<tag>out.action.val="sourceChange"</tag></item>
+
+        <!-- Select a channel -->
+        <item>met la un<tag>out.action.val="d1"</tag></item>
+        <item>met tf1<tag>out.action.val="d1"</tag></item>
+
+        <item>met la deux<tag>out.action.val="d2"</tag></item>
+        <item>met france deux<tag>out.action.val="d2"</tag></item>
+
+        <item>met la trois<tag>out.action.val="d3"</tag></item>
+        <item>met france trois<tag>out.action.val="d3"</tag></item>
+
+        <item>met la quatre<tag>out.action.val="d4"</tag></item>
+        <item>met france quatre<tag>out.action.val="d4"</tag></item>
+
+        <item>met la cinq<tag>out.action.val="d5"</tag></item>
+        <item>met france cinq<tag>out.action.val="d5"</tag></item>
+
+        <item>met la six<tag>out.action.val="d6"</tag></item>
+        <item>met M six<tag>out.action.val="d6"</tag></item>
+
+        <item>met la sept<tag>out.action.val="d7"</tag></item>
+        <item>met la huit<tag>out.action.val="d8"</tag></item>
+        <item>met la neuf<tag>out.action.val="d9"</tag></item>
+        <item>met la dix<tag>out.action.val="d10"</tag></item>
+        <item>met la onze<tag>out.action.val="d11"</tag></item>
+        <item>met la douze<tag>out.action.val="d12"</tag></item>
+        <item>met la treize<tag>out.action.val="d13"</tag></item>
+        <item>met la quatorze<tag>out.action.val="d14"</tag></item>
 
         <!-- Display menu -->
         <item>affiche le menu de la télévision<tag>out.action.val="menu"</tag></item>
@@ -67,6 +111,8 @@
         <item>met la télévision en lecture<tag>out.action.val="play"</tag></item>
         <item>met la télévision en pause<tag>out.action.val="pause"</tag></item>
         <item>met la télévision en stop<tag>out.action.val="stop"</tag></item>
+        <item>met la télévision en arrière<tag>out.action.val="rew"</tag></item>
+        <item>met la télévision en avant<tag>out.action.val="ff"</tag></item>
         <item>met la télévision en enregistrement<tag>out.action.val="rec"</tag></item>
 
         <!-- Subtitles -->
@@ -77,11 +123,24 @@
         <item>met la 3D sur la télévision<tag>out.action.val="3d"</tag></item>
         <item>met le mode 3D sur la télévision<tag>out.action.val="3d"</tag></item>
         <item>met le mode 3D de la télévision<tag>out.action.val="3d"</tag></item>
+        <item>change le mode d'affichage de la télévision<tag>out.action.val="3d"</tag></item>
+        <item>change l'affichage de la télévision<tag>out.action.val="3d"</tag></item>
 
         <!-- Others -->
         <item>affiche le guide de la télévision<tag>out.action.val="guide"</tag></item>
         <item>affiche le menu texte de la télévision<tag>out.action.val="text"</tag></item>
         <item>affiche les infos de la télévision<tag>out.action.val="info"</tag></item>
+
+        <!-- Navigation -->
+        <item>retour<tag>out.action.val="return"</tag></item>
+        <item>annule<tag>out.action.val="cancel"</tag></item>
+        <item>entrer<tag>out.action.val="enter"</tag></item>
+        <item>gauche<tag>out.action.val="left"</tag></item>
+        <item>droite<tag>out.action.val="right"</tag></item>
+        <item>monte<tag>out.action.val="up"</tag></item>
+        <item>en haut<tag>out.action.val="up"</tag></item>
+        <item>descend<tag>out.action.val="down"</tag></item>
+        <item>en bas<tag>out.action.val="down"</tag></item>
 
     </one-of>
 

@@ -9,8 +9,6 @@ exports.action = function (data, callback, config, SARAH) {
     // Create instance of module
     var tv = new PanasonicViera(config.ip);
 
-    console.log('Value : ' + data.val);
-
     switch (data.val) {
 
         case "shutdownTv":
@@ -30,11 +28,11 @@ exports.action = function (data, callback, config, SARAH) {
             break;
 
         case "volumeHalf":
-            tv.setVolume(50);
+            tv.setVolume(25);
             break;
 
         case "volumeMax":
-            tv.setVolume(100);
+            tv.setVolume(50);
             break;
 
         case "volumeUp":
@@ -67,6 +65,67 @@ exports.action = function (data, callback, config, SARAH) {
 
         case "sourceChange":
             tv.send(PanasonicViera.CHANGE_INPUT);
+            break;
+
+        case "d1":
+            tv.send(PanasonicViera.D1);
+            break;
+
+        case "d2":
+            tv.send(PanasonicViera.D2);
+            break;
+
+        case "d3":
+            tv.send(PanasonicViera.D3);
+            break;
+
+        case "d4":
+            tv.send(PanasonicViera.D4);
+            break;
+
+        case "d5":
+            tv.send(PanasonicViera.D5);
+            break;
+
+        case "d6":
+            tv.send(PanasonicViera.D6);
+            break;
+
+        case "d7":
+            tv.send(PanasonicViera.D7);
+            break;
+
+        case "d8":
+            tv.send(PanasonicViera.D8);
+            break;
+
+        case "d9":
+            tv.send(PanasonicViera.D9);
+            break;
+
+        case "d10":
+            tv.send(PanasonicViera.D1);
+            tv.send(PanasonicViera.D0);
+            break;
+
+        case "d11":
+            tv.send(PanasonicViera.D1);
+            tv.send(PanasonicViera.D1);
+            break;
+
+        case "d12":
+            tv.send(PanasonicViera.D1);
+            tv.send(PanasonicViera.D2);
+            break;
+
+        case "d13":
+            tv.send(PanasonicViera.D1);
+            tv.send(PanasonicViera.D3);
+            break;
+
+        case "d14":
+            tv.send(PanasonicViera.D1);
+            tv.send(PanasonicViera.D4);
             break;
 
         case "menu":
@@ -105,6 +164,14 @@ exports.action = function (data, callback, config, SARAH) {
             tv.send(PanasonicViera.STOP);
             break;
 
+        case "rew":
+            tv.send(PanasonicViera.REW);
+            break;
+
+        case "ff":
+            tv.send(PanasonicViera.FF);
+            break;
+
         case "rec":
             tv.send(PanasonicViera.REC);
             break;
@@ -127,6 +194,30 @@ exports.action = function (data, callback, config, SARAH) {
 
         case "info":
             tv.send(PanasonicViera.INFO);
+            break;
+
+        case "return":
+            tv.send(PanasonicViera.RETURN);
+            break;
+
+        case "cancel":
+            tv.send(PanasonicViera.CANCEL);
+            break;
+
+        case "left":
+            tv.send(PanasonicViera.LEFT);
+            break;
+
+        case "right":
+            tv.send(PanasonicViera.RIGHT);
+            break;
+
+        case "up":
+            tv.send(PanasonicViera.UP);
+            break;
+
+        case "down":
+            tv.send(PanasonicViera.DOWN);
             break;
 
         default:
