@@ -1,0 +1,91 @@
+<grammar version="1.0" xml:lang="fr-FR" mode="voice" root="rulePanasonic" xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
+  <rule id="rulePanasonic" scope="public">
+    <example>Sarah éteint la télévision</example>
+    <tag>out.action=new Object();</tag>
+
+    <item>Sarah</item>
+
+    <one-of>
+        <item>éteint la télévision<tag>out.action.val="shutdownTv"</tag></item>
+
+        <!-- Volume  mute -->
+        <item>coupe le son de la télévision<tag>out.action.val="muteTvOn"</tag></item>
+        <item>coupe le volume de la télévision<tag>out.action.val="muteTvOn"</tag></item>
+
+        <item>remet le son de la télévision<tag>out.action.val="muteTvOff"</tag></item>
+        <item>remet le volume de la télévision<tag>out.action.val="muteTvOff"</tag></item>
+
+        <!-- Volume  min -->
+        <item>met le son de la télévision au minimum<tag>out.action.val="volumeMin"</tag></item>
+        <item>met le volume de la télévision au minimum<tag>out.action.val="volumeMin"</tag></item>
+
+        <!-- Volume  half -->
+        <item>met le son de la télévision à moitié<tag>out.action.val="volumeHalf"</tag></item>
+        <item>met le volume de la télévision à moitié<tag>out.action.val="volumeHalf"</tag></item>
+
+        <!-- Volume  max -->
+        <item>met le son de la télévision au maximum<tag>out.action.val="volumeMax"</tag></item>
+        <item>met le volume de la télévision au maximum<tag>out.action.val="volumeMax"</tag></item>
+
+        <!-- Volume  up -->
+        <item>monte le son de la télévision<tag>out.action.val="volumeUp"</tag></item>
+        <item>monte le volume de la télévision<tag>out.action.val="volumeUp"</tag></item>
+        <item>hausse le son de la télévision<tag>out.action.val="volumeUp"</tag></item>
+        <item>hausse le volume de la télévision<tag>out.action.val="volumeUp"</tag></item>
+
+        <!-- Volume  down -->
+        <item>baisse le son de la télévision<tag>out.action.val="volumeDown"</tag></item>
+        <item>baisse le volume de la télévision<tag>out.action.val="volumeDown"</tag></item>
+
+        <!-- Channel up -->
+        <item>met la chaine suivante<tag>out.action.val="channelUp"</tag></item>
+
+        <!-- Channel down -->
+        <item>met la chaine précédente<tag>out.action.val="channelDown"</tag></item>
+
+        <!-- Select source -->
+        <item>met la source télévision<tag>out.action.val="sourceTv"</tag></item>
+        <item>met la source internet<tag>out.action.val="sourceInternet"</tag></item>
+        <item>met la source carte SD<tag>out.action.val="sourceSdCard"</tag></item>
+        <item>change la télévision de source<tag>out.action.val="sourceChange"</tag></item>
+
+        <!-- Display menu -->
+        <item>affiche le menu de la télévision<tag>out.action.val="menu"</tag></item>
+        <item>met le menu de la télévision<tag>out.action.val="menu"</tag></item>
+
+        <!-- Display submenu -->
+        <item>affiche le sous menu de la télévision<tag>out.action.val="menu"</tag></item>
+        <item>met le sous menu de la télévision<tag>out.action.val="menu"</tag></item>
+
+        <!-- Select color buttons -->
+        <item>sélectionne le bouton rouge de la télévision<tag>out.action.val="red"</tag></item>
+        <item>sélectionne le bouton vert de la télévision<tag>out.action.val="green"</tag></item>
+        <item>sélectionne le bouton jaune de la télévision<tag>out.action.val="yellow"</tag></item>
+        <item>sélectionne le bouton blue de la télévision<tag>out.action.val="blue"</tag></item>
+
+        <!-- Playback control -->
+        <item>met la télévision en lecture<tag>out.action.val="play"</tag></item>
+        <item>met la télévision en pause<tag>out.action.val="pause"</tag></item>
+        <item>met la télévision en stop<tag>out.action.val="stop"</tag></item>
+        <item>met la télévision en enregistrement<tag>out.action.val="rec"</tag></item>
+
+        <!-- Subtitles -->
+        <item>met les sous-titres de la télévision<tag>out.action.val="sttl"</tag></item>
+        <item>affiche les sous-titres de la télévision<tag>out.action.val="sttl"</tag></item>
+
+        <!-- 3D -->
+        <item>met la 3D sur la télévision<tag>out.action.val="3d"</tag></item>
+        <item>met le mode 3D sur la télévision<tag>out.action.val="3d"</tag></item>
+        <item>met le mode 3D de la télévision<tag>out.action.val="3d"</tag></item>
+
+        <!-- Others -->
+        <item>affiche le guide de la télévision<tag>out.action.val="guide"</tag></item>
+        <item>affiche le menu texte de la télévision<tag>out.action.val="text"</tag></item>
+        <item>affiche les infos de la télévision<tag>out.action.val="info"</tag></item>
+
+    </one-of>
+
+    <tag>out.action._attributes.uri="http://127.0.0.1:8080/sarah/panasonic";</tag>
+
+  </rule>
+</grammar>
