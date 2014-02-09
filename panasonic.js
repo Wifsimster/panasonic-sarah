@@ -73,6 +73,10 @@ exports.action = function (data, callback, config, SARAH) {
             tv.send(PanasonicViera.CHANGE_INPUT);
             break;
 
+        case "d0":
+            tv.send(PanasonicViera.D0);
+            break;
+
         case "d1":
             tv.send(PanasonicViera.D1);
             break;
@@ -107,31 +111,6 @@ exports.action = function (data, callback, config, SARAH) {
 
         case "d9":
             tv.send(PanasonicViera.D9);
-            break;
-
-        case "d10":
-            tv.send(PanasonicViera.D1);
-            tv.send(PanasonicViera.D0);
-            break;
-
-        case "d11":
-            tv.send(PanasonicViera.D1);
-            tv.send(PanasonicViera.D1);
-            break;
-
-        case "d12":
-            tv.send(PanasonicViera.D1);
-            tv.send(PanasonicViera.D2);
-            break;
-
-        case "d13":
-            tv.send(PanasonicViera.D1);
-            tv.send(PanasonicViera.D3);
-            break;
-
-        case "d14":
-            tv.send(PanasonicViera.D1);
-            tv.send(PanasonicViera.D4);
             break;
 
         case "menu":
