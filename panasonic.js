@@ -1,13 +1,19 @@
 exports.action = function (data, callback, config, SARAH) {
 
+    // Variables
     var exec = require('child_process').exec;
     var process = '';
     var PanasonicViera = require('./panasonicviera');
-
+    
     config = config.modules.panasonic;
 
+    if (!config.hostname){
+        console.warn("Missing Panasonic hostname tv !");
+        return;
+    }
+    
     // Create instance of module
-    var tv = new PanasonicViera(config.ip);
+    var tv = new PanasonicViera(config.hostname);
 
     switch (data.val) {
 
@@ -224,13 +230,13 @@ exports.action = function (data, callback, config, SARAH) {
             process = '';
     }
 
-    console.log('Process : ' + process);
+    // console.log('Process : ' + process);
 
     if (process != '') {
         var child = exec(process,
             function (error, stdout, stderr) {
                 if (error !== null) {
-                    console.log('exec error: ' + error);
+                    console.error('Exec error: ' + error);
                 }
             });
 
