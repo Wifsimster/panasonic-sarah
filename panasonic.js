@@ -7,13 +7,13 @@ exports.action = function (data, callback, config, SARAH) {
     
     config = config.modules.panasonic;
 
-    if (!config.hostname){
+    if (!config.Hostname){
         console.warn("Missing Panasonic hostname tv !");
         return;
     }
     
     // Create instance of module
-    var tv = new PanasonicViera(config.hostname);
+    var tv = new PanasonicViera(config.Hostname);
 
     switch (data.val) {
 
