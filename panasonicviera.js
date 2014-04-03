@@ -27,6 +27,7 @@ exports.INTERNET		= 'INTERNET';
 exports.CHANGE_INPUT	= 'CHG_INPUT';
 exports.SD_CARD			= 'SD_CARD';
 // number keypad
+exports.D0				= 'D0';
 exports.D1				= 'D1';
 exports.D2				= 'D2';
 exports.D3				= 'D3';
@@ -36,7 +37,6 @@ exports.D6				= 'D6';
 exports.D7				= 'D7';
 exports.D8				= 'D8';
 exports.D9				= 'D9';
-exports.D0				= 'D0';
 // arrow keypad
 exports.MENU			= 'MENU';
 exports.SUBMENU			= 'SUBMENU';

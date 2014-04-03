@@ -91,7 +91,13 @@
         <item>met la onze<tag>out.action.val="d1";out.action.val="d1"</tag></item>
         <item>met la douze<tag>out.action.val="d1";out.action.val="d2"</tag></item>
         <item>met la treize<tag>out.action.val="d1";out.action.val="d3"</tag></item>
-        <item>met la quatorze<tag>out.action.val="d1";out.action.val="d14"</tag></item>
+        <item>met la quatorze<tag>out.action.val="d1";out.action.val="d4"</tag></item>
+        <item>met la quinze<tag>out.action.val="d1";out.action.val="d5"</tag></item>
+        <item>met la seize<tag>out.action.val="d1";out.action.val="d6"</tag></item>
+        <item>met la dix-sept<tag>out.action.val="d1";out.action.val="d7"</tag></item>
+        <item>met la dix-huit<tag>out.action.val="d1";out.action.val="d8"</tag></item>
+        <item>met la dix-neuf<tag>out.action.val="d1";out.action.val="d9"</tag></item>
+        <item>met la vingt<tag>out.action.val="d2";out.action.val="d0"</tag></item>
 
         <!-- Display menu -->
         <item>affiche le menu de la télévision<tag>out.action.val="menu"</tag></item>
